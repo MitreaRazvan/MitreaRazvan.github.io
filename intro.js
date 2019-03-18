@@ -60,7 +60,10 @@ function showSkills() {
     var skills = ['html', 'css','js'];
     console.warm = ('showSkills', skills);
     for(var i = 0; i < skills.length; i++) {
-        console.info("#" + (i + 1) + " " + skills[i]);
+        printSkill(skills[i], i);
+    }
+    function printSkill(skill, index) {
+        console.info("#" + (index + 1) + " " + skill);
     }
 }
 
