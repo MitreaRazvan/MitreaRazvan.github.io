@@ -8,7 +8,7 @@ function getColor() {
     if (date.getMinutes() > 18) {
         return "black";
     }
-    return "gold";
+    return "Red";
 }
 
 var wellcome = getWellcomeMsg();
