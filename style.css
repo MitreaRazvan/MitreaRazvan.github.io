@@ -158,3 +158,7 @@ H6 {
     box-shadow: 5px 5px 15px #334455;
     transition: 2s;
 }
+
+.endorsement{
+    color: gray;
+}
