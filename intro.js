@@ -1,6 +1,26 @@
+//var employer = true;
+//console.warn(employer);
+//console.warn('employer');
+//var name = "mitrea";
+//console.info(name);
+//console.info('name'); 
+
+//function getWellcome() {
+  //  return "wellcome here";
+//}
+//var wellcome = getWellcome();
+//console.info(wellcome);
+
+//var contentElement = document.getElementById("content");
+//console.info("contentElement", contentElement);
+//contentElement.style.color = "red";
+
 function getWellcomeMsg() {
     return "Welcome to my site!";
 }
+
+var wellcome = getWellcomeMsg();
+console.info(wellcome);
 
 function getColor() {
     var date = new Date();
@@ -10,9 +30,6 @@ function getColor() {
     }
     return "Red";
 }
-
-var wellcome = getWellcomeMsg();
-console.info(wellcome);
 
 var socialElement = document.getElementById("social");
 console.info("socialElement", socialElement);
@@ -57,7 +74,7 @@ function hideAllPages(){
 initMenu();
 
 function showSkills() {
-    var skills = ['html', 'css','js'];
+    var skills = ['html', 'css','js','affilaite marketing','instagram promoting','event planning'];
     
     var htmlSkills = skills.map(function(skill, index) {
         return '<li>' + skill.toUpperCase() + '</li>';
