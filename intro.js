@@ -1,26 +1,7 @@
-//var employer = true;
-//console.warn(employer);
-//console.warn('employer');
-//var name = "mitrea";
-//console.info(name);
-//console.info('name'); 
-
-//function getWellcome() {
-  //  return "wellcome here";
-//}
-//var wellcome = getWellcome();
-//console.info(wellcome);
-
-//var contentElement = document.getElementById("content");
-//console.info("contentElement", contentElement);
-//contentElement.style.color = "red";
-
-function getWellcomeMsg() {
-    return "Welcome to my site!";
+if (location.host === "mitrearazvan.github.io") {
+    API_URL.READ = '../data/skills.json';
+	API_METHOD.READ = 'GET';
 }
-
-var wellcome = getWellcomeMsg();
-console.info(wellcome);
 
 function getColor() {
     var date = new Date();
@@ -39,71 +20,42 @@ socialElement.style.color = color;
 
 
 
-function hidePage(page) {
-   var el = document.getElementById(page).style.display = 'none';
-   el.style.display = 'none';
+function initEvents() {
+    document.querySelectorAll('.top-menu-bar a').forEach(function(a){
+        a.addEventListener('click', function(e){
+             console.debug('merge', e.target);
+             var page = e.target.getAttribute('data-page');
+             hidePages();
+             showPage(page);
+        })
+    });
+    
+}
+function hidePages() {
+    var pages = document.querySelectorAll('.page');
+    pages.forEach(function (page) {
+        page.style.display = 'none';
+    });
 }
 
 function showPage(page) {
-    document.getElementById(page).style.display = 'block';
+        document.querySelector(`#${page}-page`).style.display = 'block';
 }
 
-function initMenu() {
-    var links = document.querySelectorAll("#top-menu-bar a");
-    console.info(links)
-    for(var i = 0; i < links.length; i++) {
-        links[i].onclick = clickOnMenuItem; 
-    }
-}
+initEvents();
 
-function clickOnMenuItem () {
-    console.warn('clicked on menu', this);
-    hideAllPages();
-    var pageId = this.getAttribute('data-page');
-    console.warn({pageId});
-    showPage(pageId);
-}
-
-function hideAllPages(){
-    var pages = document.querySelectorAll('.page');
-    for(var i = 0; i < pages.length; i++) {
-        pages[i].style.display = 'none';
-    }
-}
-
-initMenu();
-
-function showSkills(skills) {
-    //var allEndorsements = [8, 12, 19, 3];
-    //var skills = ['html','css','js','nodejs'];
-    skills.sort(function(a, b){
-        //return b.name > a.name ? -1 : 0;
-        return b.endorsements - a.endorsements;
-    });
-    
-    var htmlSkills = skills.map(function(skill) {
-        console.warn('cine esti?', skill);
-        var endorsedBy = skill.endorsedBy ? ' - ' + skill.endorsedBy : '';
-        var endorsements = ` <span class="endorsement">(${skill.endorsements}${endorsedBy})</span>`;
-        return '<li>' + skill.name.toUpperCase() + endorsements  + '</li>';
-    });
-
+function renderSkills(skills) {
     var ul = document.querySelector('#skills-page ul');
-    ul.innerHTML = htmlSkills.join('');
+
+    console.warn('skills', skills);
+    
+    ul.innerHTML = skills.map(function(skill){
+        return `<li>${skill.name}</li>`
+    }).join('');
 }
 
-hideAllPages();
-showPage('skills-page');
-// TODO: load skills.json and pass them to showSkills
-
-fetch('data/skills.json')
-  .then(function(response) {
-      console.info('loaded skills.json');
-    return response.json();
-  })
-  .then(function(skills) {
-      console.log('3 skills', skills);
-    showSkills(skills);
-  });
-
-showSkills([{name:'test', endorsements:1}]);
+fetch('data/skills.json').then(function(resp){
+    return resp.json();
+}).then(function(skills){
+    renderSkills(skills);
+})
