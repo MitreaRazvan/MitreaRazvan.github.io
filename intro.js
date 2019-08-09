@@ -1,16 +1,3 @@
-var API_URL = {
-    READ: 'data/skills.json'
-}
-
-var API_METHOD = {
-    READ: 'GET'
-};
-
-if (location.host === "mitrearazvan.github.io") {
-    API_URL.READ = 'data/skills.json';
-	API_METHOD.READ = 'GET';
-}
-
 function getColor() {
     var date = new Date();
     console.log(date.getMinutes());
