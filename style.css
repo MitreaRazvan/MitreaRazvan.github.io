@@ -19,11 +19,22 @@ body{
     font-family: 'Roboto', sans-serif;
     color: var(--mainBackgroundWhite);
     background: var(--mainWhite);
-    font-size: 16px;
+    font-size: 20px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
+strong{
+  font-size: 18px;
+}
+
+.project-tagline{
+  font-size: 16px;
+}
+
+p{
+  font-size: 16px;
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700px;
