@@ -1,108 +1,156 @@
+<!doctype html>
 <html>
-
 <head>
-    <title>Mitrea Razvan CV</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Mitrea Andrei Razvan</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" 
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 </head>
-
 <body>
-    <header>
-        <h1>CV</h1>
-        <div id="head-background">
-            <img src="cv.jpg" width="165px">
-            <div id="social">
-                <h2></h2>
-                <a href="https://github.com/MitreaRazvan">
-                    <img src="https://image.flaticon.com/icons/svg/25/25231.svg" width="50">
-                </a>
-                <a href="">   
-                </a>
-            </div>
-            <div class="headerTxt">
-            <p><strong>Mitrea Andrei Razvan</strong></p>
-            <ul><strong>graduate:</strong> FasttrackIt : Web Developer</ul>
-            <ul><strong>graduate:</strong> advertising faculty</ul>
-            <ul><strong>graduate:</strong> high school of choreography and dramatic art: acting</ul>
-            </p>
-            </div>
+<div class="wrapper">
+    <div class="sidebar-wrapper">
+        <div class="profile-container">
+            <img class="profile" src="img/cv.jpg">
+            <h1 class="name">Mitrea Andrei Razvan</h1>
+            <h3 class="tagline">Web developer</h3>
         </div>
+        <!-- profile container -->
+        <div class="contact-container container-block">
+                <h3>Contacts</h3>
+                <ul class="contact-list">
+                    <li class="email" ><i class="fas fa-envelope"></i><a href="mailto:razvanmitrea1@gmail.com">razvanmitrea1@gmail.com</a></li>
+                    <li class="phone"><i class="fas fa-phone"></i><a href="">0754921851</a></li>
+                    <li class="linkedin"><i class="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/mitrea-andrei-razvan-23aa2b18b/">Linkedin</a></li>
+                    <li class="github"><i class="fab fa-github"></i><a href="https://github.com/MitreaRazvan">github</a></li>
+                </ul>
+             </div>
+             <!-- informations under wrapper photo/name -->
+             <div class="languages-container container-block">
+                 <h2 class="container-title">Languages</h2>
+                 <ul class="list-languages">
+                     <li>Romanian<span class="lang-desc">(Native)</span></li>
+                     <li>English<span class="lang-desc">(Advanced)</span></li>
+                 </ul>
+             </div>
+    </div>
+    <!-- done sidebar information!! -->
+    <!-- Main Content Start -->
+    <div class="main-wrapper">
+            <section class="section summary-section">
+                    <h2 class="section-title"><span class="icon-holder"><i class="fas fa-user"></i></span>Career Profile</h2>
+                    <div class="summary">
+                        <p>
+                                I am Razvan and I am a highly motivated, focused and consistency-oriented Web Developer. I value knowledge and efficiency. 
+                                Coming from a creative background, I decided to pursue a career in Web Development 
+                                as I believe it better suits me. I am a rational person, 
+                                born problem solver with a great degree of patience and neatness when doing my job. 
+                                Mostly self-taught I can say I have working knowledge of web applications and
+                                programming languages.
+                    </div><!--//summary-->
+                </section><!--//section-->
+                <section class="section summary-section">
+                        <h2 class="section-title"><span class="icon-holder"><i class="fas fa-school"></i></span>Education</h2>
+                        <div class="summary">
+                            <Strong>FastTrackIT(Web-Developer)</Strong>
+                            <p>Web-Developer</p>
+                            <p>2019</p>
+                            <strong>University Babes-Bolyai</strong>
+                            <p>advertising section</p>
+                            <p>2015-2018</p>
+                            <strong>High-school of Theater</strong>
+                            <p>2011-2015</p>
+                            <strong>Udemy</strong>
+                            <p>The Complete jQuery Course: From Beginner To Advanced</p>
+                            <p>The Modern JavaScript Bootcamp</p>
+                        </div><!--//summary-->
+                    </section><!--//section-->
+                
+              <!-- SKILLS -->
+     <div class="main-wrapper-skills">
+            <section class="summary-section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-rocket"></i></span> Skills</h2>
+               <div class="summary"><p class="text-first"></p></div>
+               <div class="skillset"> 
 
-        <ul class="top-menu-bar">
-            <li><a href="#" data-page="home">Home</a></li>
-            <li><a href="#" data-page="skills">Skills</a></li>
-            <li><a href="#" data-page="languages">Languages</a></li>
-            <li><a href="#" data-page="about">About</a></li>
-        </ul>
+                    <div class="item">  <!-- items -->
+                        <h3 class="level-title">Javascript &amp; jQuery</h3>
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h3 class="level-title">NodeJS</h3>                                    
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h3 class="level-title">HTML5 &amp; CSS</h3>                                
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h3 class="level-title">MYSQL</h3>                                
+                    </div><!--//item-->
 
-
-        <h2>
-            <p style="color:black; text-align:left">
-        </h2>
-    </header>
-    <main>
-        <aside>
-            <div>
-                <div id="sidebar-left">
-                    <div id="widget" class="widget">
-                        <div class="header" title="Show/Hide content" style="color:white">Hire Me!</div>
-                        <div class="content">
-                            <br>
-                            <a class="mail" href="mailto:razvanmitrea1@gmail.com">
-                                razvanmitrea1@gmail.com
-                            </a>
-                            <a class="phone" href="tel:0754921851">
-                                0754921851
-                                <p id="unique" class="" style="color:burlywood; text-align: right"></p>
-                            </a>
-                            <div class="button">
-                            </div>
-                        </div>
+                    <div class="item">
+                        <h3 class="level-title">Bootstrap</h3>
                     </div>
-                </div>
-        </aside>
-        <section>
-                <div class="page" id="home-page">
-                    <h2>Home</h2>
-                    <p>
-                        Hello, my name is Mitrea Andrei Razvan, I am 22 years old and I live in Cluj-Napoca. I graduated from the choreography high
-                        school in the acting section, I did the faculty of advertising (FSPAC), and in the last years I have
-                        wanted a lot to learn web developing. I am young and excited to learn and accumulate as much
-                        information in the field.
-                        I took the courses in the field at FastTrackIt (Web Developing). I am ready for the challenges and
-                        learned as much as possible.</p>
-                </div>
-                <div class="page" style="display:block" id="skills-page">
-                    <h2>Skills</h2>
-                    <ul></ul>
-                </div>
-                <div class="page" id="languages-page">
-                    <h2>Languages</h2>
-                    <table border="1">
-                        <tr>
-                            <td>languages</td>
-                            <td>level</td>
-                        </tr>
-                        <tr>
-                            <td>romanian</td>
-                            <td>native</td>
-                        </tr>
-                        <tr>
-                            <td>English</td>
-                            <td>Advance</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="page" id="about-page">
-                    <h2>About</h2>
-                    <p>
-                        You can click on the github icon to see the projects I'm working on.</p>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <p></p>
-        </footer>
-        <script src="intro.js"></script>
-    </body>
-    
-    </html>
+                    
+                    <div class="item">
+                        <h3 class="level-title">Photoshop</h3>                                 
+                    </div>
+                    
+                    <div class="item">
+                            <h3 class="level-title">WordPress</h3>                                 
+                        </div><!--//item-->
+                </div>  
+            </section><!--//skills-section-->
+                
+                <section class="section projects-section">
+                    <h2 class="section-title"><span class="icon-holder"><i class="fas fa-archive"></i></span>Projects</h2>
+                    <div class="intro">
+                        <p>Here you can find my projects </p>
+                    </div><!--//intro-->
+                    <div class="item">
+                        <span class="project-title"><a href="https://github.com/MitreaRazvan/web-logistics">Web-Logistics</a></span> - <span class="project-tagline">Web-Logistics works 
+                            through a 
+                            simple idea : the registered persons can add the location from which the goods can be 
+                            picked up and at the same time the registered drivers can take over the cargo to transport it to the desired location.</span>
+                            <br>
+                            <span class="incon-text"><i class="fas fa-code"></i><strong> JS | MYSQL | NODEJS | HTML | CSS</strong></span>
+                    </div><!--//item-->
+                    <div class="item">
+                        <span class="project-title"><a href="" target="_blank">Node-Agenda-App</a></span> - 
+                        <span class="project-tagline">A simple app using node & express for managing phone books.
+                                Still in progress, need to add:
+                                <li>MYSQL(for the moment works with JSON)</li>
+                                <li>Make a design for the page</li>
+                                <li>A little bit of work on buttons</li>
+                           </span></div>
+                           <span class="incon-text"><i class="fas fa-code"></i><strong> JS | MYSQL | NODEJS | HTML | CSS</strong></span>
+                    </div><!--//item-->
+                    <div class="item">
+                        <span class="project-title"><a href="" target="_blank">SundayHouse</a></span> 
+                        SundayHouse is a E-Commerce learning project in progress. First focus was on add to cart items:
+                        <li>The Shopping Cart</li>
+                        <li>Add item in Cart</li>
+                        <li>Add amount on items</li>
+                        <li>LowerAmount on items</li>
+                        <li>Remove items</li>
+                        <li>Clear the cart</li>
+                        </li><span class="project-tagline"></span>
+                        <span class="incon-text"><i class="fas fa-code"></i><strong> JS | JSON | NODEJS | HTML | CSS</strong></span>
+                    </div><!--//item-->
+                    <!-- <div class="item">
+                        <span class="project-title"><a href="hhttp://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" target="_blank">Atom</a></span> - <span class="project-tagline">A comprehensive website template solution for startups/developers to market their mobile apps. </span>
+                    </div><//item-->
+                    <!-- <div class="item">
+                        <span class="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/" target="_blank">Delta</a></span> - <span class="project-tagline">A responsive Bootstrap one page theme designed to help app developers promote their mobile apps</span>
+                    </div>//item --> 
+                </section><!--//section-->
+    </div>
+
+</div>
+<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a"crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
