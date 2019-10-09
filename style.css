@@ -19,7 +19,7 @@ body{
     font-family: 'Roboto', sans-serif;
     color: var(--mainBackgroundWhite);
     background: var(--mainWhite);
-    font-size: 14px;
+    font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
