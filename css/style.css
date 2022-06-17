@@ -26,10 +26,57 @@
     background: var(--primary-color)
 }
 
+@media only screen and (max-width: 780px){
+    
+    body{
+        white-space: normal;
+        overflow-x: hidden;
+
+    }
+    /* .navbar{
+        width:62%;
+    } */
+    .headline-title{
+        font-size: 30px;
+        margin-top: -90px;
+
+    }
+
+    .show img{
+      width: 350px;
+      height: 350px;
+      margin-top: -80px;
+    }
+
+    .show{
+        margin-bottom: -350px;
+    }
+
+    #filters > li a{
+        justify-content: right; 
+    }
+
+    #filters li {
+        justify-content: right; 
+    }
+
+    video {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+
 body {
     padding-top: 120px;
     font-family: outfit;
     color: var(--black-color);
+    
+}
+
+.show {
+    width: 600px;
+    height: 600px;
 }
 
 .h1,
