@@ -1,139 +1,611 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Mitrea Andrei Razvan</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-</head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mitrea Portfolio</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fontaweome icons replacment -->
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+    <!-- Theme styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Your Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet"> </head>
+
 <body>
-<div class="wrapper">
-    <div class="sidebar-wrapper">
-        <div class="profile-container">
-            <img class="profile" src="img/cv.jpg">
-            <h1 class="name">Mitrea Andrei Razvan</h1>
-            <h3 class="tagline">Web developer</h3>
-        </div>
-        <!-- profile container -->
-        <div class="contact-container container-block">
-                <h3>Contacts</h3>
-                <ul class="contact-list">
-                    <li class="email" ><i class="fas fa-envelope"></i><a href="mailto:razvanmitrea1@gmail.com">razvanmitrea1@gmail.com</a></li>
-                    <li class="phone"><i class="fas fa-phone"></i><a href="">0754921851</a></li>
-                    <li class="linkedin"><i class="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/mitrea-andrei-razvan-23aa2b18b/">Linkedin</a></li>
-                    <li class="github"><i class="fab fa-github"></i><a href="https://github.com/MitreaRazvan">github</a></li>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top py-3" id="mainNav">
+        <div class="container"> <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/classic.svg" alt="" width="150px" height="50px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="index.html">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="about.html">About</a> </li>
                 </ul>
-             </div>
-             <!-- informations under wrapper photo/name -->
-             <div class="languages-container container-block">
-                 <h2 class="container-title">Languages</h2>
-                 <ul class="list-languages">
-                     <li>Romanian<span class="lang-desc">(Native)</span></li>
-                     <li>English<span class="lang-desc">(Advanced)</span></li>
-                 </ul>
-             </div>
-    </div>
-    <!-- done sidebar information!! -->
-    <!-- Main Content Start -->
-    <div class="main-wrapper">
-            <section class="section summary-section">
-                    <h2 class="section-title"><span class="icon-holder"><i class="fas fa-user"></i></span>Career Profile</h2>
-                    <div class="summary">
-                        <p>
-                                I am Razvan and I am a highly motivated, focused and consistency-oriented Web Developer. I value knowledge and efficiency. 
-                                Coming from a creative background, I decided to pursue a career in Web Development 
-                                as I believe it better suits me. I am a rational person, 
-                                born problem solver with a great degree of patience and neatness when doing my job. 
-                                Mostly self-taught I can say I have working knowledge of web applications and
-                                programming languages.
-                    </div><!--//summary-->
-                </section><!--//section-->
-                <section class="section summary-section">
-                        <h2 class="section-title"><span class="icon-holder"><i class="fas fa-school"></i></span>Education</h2>
-                        <div class="summary">
-                            <Strong>FastTrackIT(Web-Developer)</Strong>
-                            <p>Web-Developer</p>
-                            <p>2019</p>
-                            <strong>University Babes-Bolyai</strong>
-                            <p>advertising section</p>
-                            <p>2015-2018</p>
-                            <strong>High-school of Theater</strong>
-                            <p>2011-2015</p>
-                            <strong>Udemy</strong>
-                            <p>The Complete jQuery Course: From Beginner To Advanced</p>
-                            <p>The Modern JavaScript Bootcamp</p>
-                        </div><!--//summary-->
-                    </section><!--//section-->
-                
-              <!-- SKILLS -->
-     <div class="main-wrapper-skills">
-            <section class="summary-section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-rocket"></i></span> Skills</h2>
-               <div class="summary"><p class="text-first"></p></div>
-               <div class="skillset"> 
-
-                    <div class="item">  <!-- items -->
-                        <h3 class="level-title">Javascript &amp; jQuery</h3>
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">HTML5 &amp; CSS</h3>                                
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">MYSQL(Basics)</h3>                                
-                    </div><!--//item-->
-
-                    <div class="item">
-                        <h3 class="level-title">Bootstrap</h3>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <div class="row d-flex align-content-center">
+                <div class="col-md-7">
+                    <div class="headline">
+                        <div class="headline-content">
+                            <h1 class="headline-title display-2">UI Designer & Creative Developer</h1>
+                            <p class="headline-subtitle">Ambitious Digital Worker</p>
+                            <p class="headline-subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci laborum molestias animi ipsum corrupti dignissimos, debitis nesciunt totam at alias! Autem, nihil nisi provident excepturi vitae a maxime corrupti in.</p>
+                        </div>
                     </div>
-                    
-                    <div class="item">
-                        <h3 class="level-title">Photoshop</h3>                                 
+                </div>
+                <div class="class col-md-3">
+                    <img src="img/absurd.png" alt="" width="600" height="600">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end: Header -->
+    <section class="space-md">
+        <!-- portfolio -->
+        <div id="portfolio" class="container">
+            <div id="portfolio-filters">
+                <ul id="filters" class="p-0">
+                    <li><a href="*" class="active">All</a></li>
+                    <li><a href=".web">Web Design</a></li>
+                    <li><a href=".app">App Design</a></li>
+                    <li><a href=".logo">Logos</a></li>
+                    <li><a href=".crm">CRM</a></li>
+                </ul>
+            </div>
+            <div class="grid" data-cols="3" data-margin="30" data-height="1" data-masonry='{ "columnWidth": 200, "itemSelector": ".entry" }'>
+                <!-- entry -->
+                <div class="entry work-entry web">
+                    <a href="kurzena.html">
+                        <div class="entry-image imageBG" data-img="img/kurzena/home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Kurzena</div>
+                                <div class="work-entry-cat">Marketing Website</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry crm">
+                    <a href="krayincrm.html">
+                        <div class="entry-image imageBG" data-img="img/crm/krayincrm/te1.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Krayin</div>
+                                <div class="work-entry-cat">CRM Web Platform</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry app">
+                    <a href="origin.html">
+                        <div class="entry-image imageBG" data-img="img/origin/presentation.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">NFT Marketplace Design Concept</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry web">
+                    <a href="infodata.html">
+                        <div class="entry-image imageBG" data-img="img/infodata/home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Infodata</div>
+                                <div class="work-entry-cat">Marketing Website</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="entry work-entry web">
+                    <a href="abrivo.html">
+                        <div class="entry-image imageBG" data-img="img/abrivo/home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Abrivo</div>
+                                <div class="work-entry-cat">Marketing Website</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry web">
+                    <a href="atena.html">
+                        <div class="entry-image imageBG" data-img="img/atena/home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Atena-Services</div>
+                                <div class="work-entry-cat">Marketing Website</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry web">
+                    <a href="impresan.html">
+                        <div class="entry-image imageBG" data-img="img/impresan/home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Impresan-Solutions</div>
+                                <div class="work-entry-cat">Marketing Website</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry web">
+                    <a href="mcsolar.html">
+                        <div class="entry-image imageBG" data-img="img/mcsolar/home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">McSolar</div>
+                                <div class="work-entry-cat">Affiliate Marketing Landing Page</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+              
+                <div class="entry work-entry web">
+                    <a href="mctraffic.html">
+                        <div class="entry-image imageBG" data-img="img/mctraffic/home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">McTraffic</div>
+                                <div class="work-entry-cat">Marketing Promovation Website</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry web">
+                    <a href="mk.html">
+                        <div class="entry-image imageBG" data-img="img/mk/home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">MK Digital Marketing</div>
+                                <div class="work-entry-cat">Digital Marketing Website</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry web">
+                    <a href="priak.html">
+                        <div class="entry-image imageBG" data-img="img/priak/home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Priak Promovation Consulting</div>
+                                <div class="work-entry-cat">Marketing Consulting Website</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry web">
+                    <a href="single.html">
+                        <div class="entry-image imageBG" data-img="img/social/home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Social-Hub</div>
+                                <div class="work-entry-cat">Marketing Promovation Website</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry web">
+                    <a href="monter.html">
+                        <div class="entry-image imageBG" data-img="img/monter/home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Monterlimited</div>
+                                <div class="work-entry-cat">Digital Marketing Website</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry web">
+                    <a href="ads.html">
+                        <div class="entry-image imageBG" data-img="img/adslumina/home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Adslumina</div>
+                                <div class="work-entry-cat">Marketing presentation Website</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry web">
+                    <a href="akarui.html">
+                        <div class="entry-image imageBG" data-img="img/akarui/s1.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Akarui</div>
+                                <div class="work-entry-cat">Interior Design / unique furniture Website</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry web">
+                    <a href="eos.html">
+                        <div class="entry-image imageBG" data-img="img/eos/home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">EOS - Marketing</div>
+                                <div class="work-entry-cat">Branding Website</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry web">
+                    <a href="transatalntic.html">
+                        <div class="entry-image imageBG" data-img="img/transatalntic/Home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Transatlantic - Solutions</div>
+                                <div class="work-entry-cat">Online Promovation Solutions Website</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry web">
+                    <a href="paschanger.html">
+                        <div class="entry-image imageBG" data-img="img/paschanger/home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Paschanger</div>
+                                <div class="work-entry-cat">OTC Trading / Cryptocurrency Website</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry web">
+                    <a href="camera.html">
+                        <div class="entry-image imageBG" data-img="img/camera/home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">LondonCameraHire</div>
+                                <div class="work-entry-cat">London Borrow Camera Shop Website</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry web">
+                    <a href="photo.html">
+                        <div class="entry-image imageBG" data-img="img/photobee/home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Photobee</div>
+                                <div class="work-entry-cat">Photography Application Landing Page Promovation</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+              
+                <div class="entry work-entry web">
+                    <a href="BTS.html">
+                        <div class="entry-image imageBG" data-img="img/BTS/home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">BTS - Band</div>
+                                <div class="work-entry-cat">BTS Band Albums Presentation Website </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry web">
+                    <a href="rnovelty.html">
+                        <div class="entry-image imageBG" data-img="img/portable/home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Rnovelty</div>
+                                <div class="work-entry-cat">Amazon Dropshipping Product Presentation Landing Page </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry web">
+                    <a href="recruting.html">
+                        <div class="entry-image imageBG" data-img="img/recruting/home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Recruiting Website Concept</div>
+                                <div class="work-entry-cat">Recruiting Website - Just a concept </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry web">
+                    <a href="cerro.html">
+                        <div class="entry-image imageBG" data-img="img/cerro/home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Interior Design Website Concept</div>
+                                <div class="work-entry-cat">Interior Design Website - Just a concept </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry web">
+                    <a href="kickstarter.html">
+                        <div class="entry-image imageBG" data-img="img/kickstarter/home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Chop + Swipe</div>
+                                <div class="work-entry-cat">Kickstarter product presentation landing page </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry web">
+                    <a href="dermatology.html">
+                        <div class="entry-image imageBG" data-img="img/dermatology/home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Dr.Aaron Goldstein - Dermatology Services</div>
+                                <div class="work-entry-cat">Dermatology Website </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry web">
+                    <a href="vasectomy.html">
+                        <div class="entry-image imageBG" data-img="img/vasectomy/home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Dr.Aaron Goldstein - Vasectomy Services </div>
+                                <div class="work-entry-cat">Vasectomy Website </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry web">
+                    <a href="browning.html">
+                        <div class="entry-image imageBG" data-img="img/browning/home.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">PW. Browning London Writter </div>
+                                <div class="work-entry-cat">Writer Blog Website </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry logo">
+                    <a href="project.html">
+                        <div class="entry-image imageBG" data-img="img/logos/adsbear/test1.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">AdsBear Igaming Logo</div>
+                                <div class="work-entry-cat">Adsbear Igaming Lead Generator</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry logo">
+                    <a href="project.html">
+                        <div class="entry-image imageBG" data-img="img/logos/bullcoin/bullp.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">CoiniOX crypto exchange 3D coin logo</div>
+                                <div class="work-entry-cat">Crypto 3D logo Illustrator</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry logo">
+                    <a href="project.html">
+                        <div class="entry-image imageBG" data-img="img/logos/impresan/impresanp.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Marketing Website</div>
+                                <div class="work-entry-cat">Marketing Website Logo Design</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry logo">
+                    <a href="project.html">
+                        <div class="entry-image imageBG" data-img="img/logos/IVSF/ivsfp.svg"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Frequency Medicine Logo</div>
+                                <div class="work-entry-cat">Holostic / Frequency Medicine Business Logo</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry logo">
+                    <a href="project.html">
+                        <div class="entry-image imageBG" data-img="img/logos/jumpingfox/jumpingfoxp.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">JumpingFox - Logo Concept</div>
+                                <div class="work-entry-cat">Just a Concept / Learning File</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry logo">
+                    <a href="project.html">
+                        <div class="entry-image imageBG" data-img="img/logos/mitrea2.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">My Own Portfolio Logo Variations</div>
+                                <div class="work-entry-cat">Logo Variations</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry logo">
+                    <a href="project.html">
+                        <div class="entry-image imageBG" data-img="img/logos/karate/karatep.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Karate - Logo Concept</div>
+                                <div class="work-entry-cat">Just a Concept / Learning File</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry logo">
+                    <a href="krayn.html">
+                        <div class="entry-image imageBG" data-img="img/logos/krayn/krayn5.svg"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">CRM Platform - Logo Concept</div>
+                                <div class="work-entry-cat">CRM APP - Logo Concept</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry logo">
+                    <a href="project.html">
+                        <div class="entry-image imageBG" data-img="img/logos/mchouse/housep.svg"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">MCHome - Affiliate Marketing Landing Page</div>
+                                <div class="work-entry-cat">MCHome - Affiliate Makreting Logo </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry logo">
+                    <a href="project.html">
+                        <div class="entry-image imageBG" data-img="img/logos/mctraffic/logop.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">MCTRAFFIC - Digital Marketing Website </div>
+                                <div class="work-entry-cat">MCTRAFFIC - Digital Marketing Logo </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="entry work-entry logo">
+                    <a href="project.html">
+                        <div class="entry-image imageBG" data-img="img/logos/minimal/vol1.svg"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Vol 1 - Minimal Logo Shapes</div>
+                                <div class="work-entry-cat">Logo Shapes </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry app">
+                    <a href="steel.html">
+                        <div class="entry-image imageBG" data-img="img/steel/presentation.svg"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Crypto Wallet Concept</div>
+                                <div class="work-entry-cat">Work in progress..</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+                <div class="entry work-entry app">
+                    <a href="nimble.html">
+                        <div class="entry-image imageBG" data-img="img/nimble/presentation.svg"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Nimble - Notes App</div>
+                                <div class="work-entry-cat"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end:entry -->
+             
+            </div>
+        </div>
+        <!-- /end:portfolio -->
+    </section>
+    <!-- footer -->
+    <footer class="footer pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="copy"> <img src="img/classic.svg" alt="" width="200" height="100"></div>
+                </div>
+                <div class="col-md-9">
+                    <h3 class="footer-title"> Im ambitious and ready for colaborations.<br> let’s build something great together.</h3>
+                    <div class="row mt-5">
+                        <div class="col-md-4">
+                            <h5>Contact Me</h5>
+                            <ul class="list-unstyled p-0">
+                                <li class="#"><a href="mailto:razvanmitrea1@gmail.com" target="_blank" data-bypass="">razvanmitrea1@gmail.com</a>
+                                    <br> </li>
+                                <li class="#"><a href="tel:0754921851" target="_blank" data-bypass="">0754921851</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Social</h4>
+                            <ul class="list-unstyled p-0">
+                                <li class="#"> <a href="https://www.behance.net/mitrearazvan" target="_blank">behance.net</a></li>
+                                <li class="#"><a href="https://www.fiverr.com/mitrearazvan" target="_blank">fiverr.com</a>
+                                    <br> </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Reviews</h4>
+                            <ul class="list-unstyled p-0">
+                                <li class="https://www.fiverr.com/mitrearazvan/create-a-responsive-and-modern-wordpress-website"><a href="#">My Reviews</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    
-                    <div class="item">
-                            <h3 class="level-title">WordPress</h3>                                 
-                        </div><!--//item-->
-                </div>  
-            </section><!--//skills-section-->
-                
-                <section class="section projects-section">
-                    <h2 class="section-title"><span class="icon-holder"><i class="fas fa-archive"></i></span>Projects</h2>
-                    <div class="intro">
-                        <p>Here you can find my projects </p>
-                    </div><!--//intro-->
-                    <div class="item">
-                        <span class="project-title"><a href="https://github.com/MitreaRazvan/web-logistics">Web-Logistics</a></span> - <span class="project-tagline">Web-Logistics works 
-                            through a 
-                            simple idea : the registered persons can add the location from which the goods can be 
-                            picked up and at the same time the registered drivers can take over the cargo to transport it to the desired location.</span>
-                            <a href="https://mitrearazvan.github.io/web-logistics/public/login.html">Live Preview / Demo</a>
-                            Add random : email / phone /carNumber -> then walk around the application press home logOut / Register Account 
-                            <br>
-                            <span class="incon-text"><i class="fas fa-code"></i><strong> JS | MYSQL | NODEJS | HTML | CSS</strong></span>
-                    </div><!--//item-->
-                </div><!--//item-->
-         
-         <div class="item">
-                        <span class="project-title"><a href="https://pustaiswebsite.s3.us-east-2.amazonaws.com/The+Pustais+%7C+website/index.html">The Pustais</a></span> - <span class="project-tagline">
-                                
-                            
-                                The Pustais, is a sketch of a design site.
-                            <a href="https://pustaiswebsite.s3.us-east-2.amazonaws.com/The+Pustais+%7C+website/index.html">Live Preview / Demo</a
-                            <br>
-                            <span class="incon-text"><i class="fas fa-code"></i><strong>  BOOTSTRAP | HTML | CSS</strong></span>
-                    </div><!--//item-->
-                </div><!--//item-->
-
-               
-                </section><!--//section-->
-    </div>
-
-</div>
-<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a"crossorigin="anonymous"></script>
-<script src="script.js"></script>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /main content -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/custom.js"></script>
 </body>
+
 </html>
