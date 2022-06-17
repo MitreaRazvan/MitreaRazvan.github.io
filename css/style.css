@@ -53,11 +53,14 @@
     }
 
     #filters > li a{
-        justify-content: right; 
+       width: fit-contet;
+
     }
 
     #filters li {
-        justify-content: right; 
+        width: 50%;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
     video {
