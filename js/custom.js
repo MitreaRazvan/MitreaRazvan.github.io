@@ -19,7 +19,7 @@ win.on('load', function() {
 
     setTimeout(function() {
         $('#preloader').addClass('hide');
-    }, 1000);
+    }, 800);
 
     // load functions
     grid();
